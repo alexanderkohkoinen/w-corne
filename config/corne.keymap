@@ -33,12 +33,12 @@
         default_layer {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
+            // | CTRL |  A  |  CTRL/S  |  OPT/D  |  CMD/F  |  SHFT/G  |   |  SHFT/H  |  CMD/J   |  OPT/K  |  CTRL/L  |  ;  |  '   |
             // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
             bindings = <
                 &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
-                &kp LCTRL &kp A &rpi LGUI S &rpi LALT D &rpi LCTRL F &rpi LSHIFT G   &rpi RSHIFT H &rpi RCTRL J  &rpi RALT K     &RPI RGUI L   &kp SEMI &kp SQT
+                &kp LCTRL &kp A &rpi LCTRL S &rpi LALT D &rpi LGUI F &rpi LSHIFT G   &rpi RSHIFT H &rpi RGUI J  &rpi RALT K &RPI RCTRL L   &kp SEMI &kp SQT
                 &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
                 &kp LGUI &mo LOWER &kp SPACE   &kp RET &mo RAISE &kp RALT
             >;
