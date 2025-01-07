@@ -17,7 +17,7 @@
     behaviors {
         rpi: require_prior_idle {
             compatible = "zmk,corne";
-            #bindings-cells = <2>;
+            #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term = <200>;
             quick-tap-ms = <200>;
