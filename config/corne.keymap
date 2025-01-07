@@ -14,7 +14,7 @@
 #define BL      3
 
 / {
-    behaviors: {
+    behaviors {
         rpi: require_prior_idle {
             compatible = "zmk,corne";
             #bindings-cells = <2>;
