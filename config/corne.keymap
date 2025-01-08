@@ -75,15 +75,15 @@
 
         bl_layer {
             // -----------------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-            //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
+            // |      |     |     |     |     |     |   |  |  |  |  |  | |
+            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   |  |  |  |  |  | |
+            // |      |     |     |     |     |     |   |  |  |  |  |  | |
+            //                    | none | none | reset|   | bootloaer| none | none|
             bindings = <
-                &trans     &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
-                &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
-                &trans     &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
-                &kp LGUI &mo LOWER &kp SPACE   &kp RET &mo RAISE &kp RALT
+                &trans     &trans       &trans       &trans       &trans       &trans   &trans   &trans   &trans &trans &trans &trans
+                &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &trans   &trans   &trans   &trans &trans &trans &trans
+                &trans     &trans       &trans       &trans       &trans       &trans   &trans   &trans   &trans &trans &trans &trans
+                &none &none &sysreset &bootloader  &none &none 
             >;
         };
 
